@@ -28,6 +28,19 @@ public class LinkedListMain {
         list4.push(56);
         list4.popLast();
         list4.show();
+        
+        LinkedList<Integer> list5 = new LinkedList();
+        list5.push(70);
+        list5.push(30);
+        list5.push(56);
+       // list5.search(30);
+        if (list5.search(30) == null)
+            System.out.println("Element Not Found!");
+        else
+            System.out.println("Element Found");
+
+
+       // list5.show();
 	}
 
 }
