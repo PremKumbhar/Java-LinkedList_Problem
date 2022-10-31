@@ -21,6 +21,13 @@ public class LinkedListMain {
         list3.push(56);
         list3.popFirst();
         list3.show();
+        
+        LinkedList<Integer> list4 = new LinkedList();
+        list4.push(70);
+        list4.push(30);
+        list4.push(56);
+        list4.popLast();
+        list4.show();
 	}
 
 }
