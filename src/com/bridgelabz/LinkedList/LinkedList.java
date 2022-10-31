@@ -36,6 +36,10 @@ public class LinkedList<T> {
     		tail = newNode;
     	}
     }
-
-
+    public void popFirst() {
+    	Node<T> temp = head.getNext();
+    	head = temp;	
+    }
+    
+   
 }
