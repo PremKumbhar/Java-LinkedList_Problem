@@ -33,14 +33,22 @@ public class LinkedListMain {
         list5.push(70);
         list5.push(30);
         list5.push(56);
-       // list5.search(30);
+      
         if (list5.search(30) == null)
             System.out.println("Element Not Found!");
         else
             System.out.println("Element Found");
-
-
-       // list5.show();
+        
+        LinkedList<Integer> list6 = new LinkedList();
+        list6.push(70);
+        list6.push(30);
+        list6.push(56);
+        boolean success = list6.searchAndInsert(30, 40);
+        if (success)
+            System.out.println("Searched And Inserted Element!");
+        else
+            System.out.println("Unsuccessfull!!");
+        list6.show();
 	}
 
 }
