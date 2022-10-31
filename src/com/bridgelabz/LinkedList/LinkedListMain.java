@@ -8,6 +8,12 @@ public class LinkedListMain {
         list1.push(30);
         list1.push(56);
         list1.show();
+        
+        LinkedList<Integer> list2 = new LinkedList();
+        list2.append(56);
+        list2.append(30);
+        list2.append(70);
+        list2.show();
 	}
 
 }
