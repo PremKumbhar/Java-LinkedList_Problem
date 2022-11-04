@@ -14,15 +14,12 @@ public class LinkedListMain {
         list2.append(30);
         list2.append(70);
         list2.show();
-        System.out.println("***************************");
         
         LinkedList<Integer> list7 = new LinkedList();
         list7.append(56);
-        
         list7.append(70);
         list7.searchAndInsert(56, 30);
         list7.show();
-        System.out.println("***********************");
         
         LinkedList<Integer> list3 = new LinkedList();
         list3.push(70);
@@ -58,6 +55,17 @@ public class LinkedListMain {
         else
             System.out.println("Unsuccessfull!!");
         list6.show();
+        
+        LinkedList<Integer> list8 = new LinkedList();
+        list8.push(70);
+        list8.push(40);
+        list8.push(30);
+        list8.push(56);
+        System.out.println("Display LinkedList of element");
+        list8.show();
+        System.out.println("LinkedList after delete the element");
+        list8.popSearchNode(40);
+        list8.show();
 	}
 
 }

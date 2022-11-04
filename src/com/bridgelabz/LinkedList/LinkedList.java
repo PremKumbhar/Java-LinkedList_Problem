@@ -84,4 +84,22 @@ public class LinkedList<T> {
             return true;
         }
     }
+    public boolean popSearchNode(T searchDeleteData)
+    {
+        Node<T> deleteNode=search(searchDeleteData);
+        Node<T> temp = head;
+        while (temp!=null) {
+            if (temp == deleteNode){
+                head = deleteNode.getNext();
+                break;
+            }
+            else if (temp.getNext() == deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+    }
 }
