@@ -14,6 +14,15 @@ public class LinkedListMain {
         list2.append(30);
         list2.append(70);
         list2.show();
+        System.out.println("***************************");
+        
+        LinkedList<Integer> list7 = new LinkedList();
+        list7.append(56);
+        
+        list7.append(70);
+        list7.searchAndInsert(56, 30);
+        list7.show();
+        System.out.println("***********************");
         
         LinkedList<Integer> list3 = new LinkedList();
         list3.push(70);

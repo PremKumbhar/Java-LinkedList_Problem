@@ -3,6 +3,7 @@ package com.bridgelabz.LinkedList;
 public class LinkedList<T> {
 	public Node<T> head;
     public Node<T> tail;
+    
 
     public void push(T data) {
         Node<T> newNode = new Node<>(data);
@@ -24,6 +25,16 @@ public class LinkedList<T> {
                 temp = temp.getNext();
             }
             System.out.println();
+        }
+    }
+    public void insert(T data) {
+    	Node<T> newNode = new Node<>(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.setNext(tail);
+            tail = newNode;
         }
     }
     public void append(T data) {
@@ -72,7 +83,5 @@ public class LinkedList<T> {
             searchedMyNode.setNext(newMyNode);
             return true;
         }
-
     }
-
 }
